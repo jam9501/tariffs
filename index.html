@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>How tariffs could impact Nassau county's small businesses</title>
+  <meta name="description" content="How Tariffs Could Impact Nassau County's Small Businesses" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    
+    #intro {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .title {
+      font-size: 2rem;
+      font-weight: bold; /* Title is bold */
+      margin-bottom: 20px;
+    }
+
+    .paragraph {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+
+    .scroll-instruction {
+      font-size: 1.5rem;
+      position: relative;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    
+    .arrow {
+      font-size: 2rem;
+      animation: blink 1s infinite alternate;
+    }
+
+    @keyframes blink {
+      50% {
+        opacity: 0;
+      }
+    }
+
+    
+    #scrolly {
+      position: relative;
+    }
+
+   
+    .step {
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+    }
+
+    .step.is-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    
+    .overlay-text {
+      position: absolute;
+      top: 20%;
+      right: 5%;
+      background-color: white;
+      padding: 10px 15px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      max-width: 30%;
+    }
+
+    
+    .map-background {
+      transition: opacity 1s ease;
+    }
+
+    
+    .map-background.lighter {
+      opacity: 0.1;
+    }
+
+    
+    .text-step {
+     
+      background-color: transparent; 
+      margin-top: 20px;
+      padding: 30px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      
+      border-radius: 0px; 
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 1s ease, transform 1s ease;
+      height: 100vh; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .text-step.is-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .step.is-active {
+      transition: all 1.5s ease;
+    }
+
+    
+    .text-step p {
+      margin-bottom: 20px;
+    }
+
+   
+    .step.is-active {
+      transition: all 1.5s ease;
+    }
+    @media screen and (max-width: 768px) {
+      .title {
+        font-size: 1.5rem;
+      }
+
+      .paragraph,
+      .text-step p {
+        font-size: 1rem;
+      }
+
+      .arrow {
+        font-size: 1.5rem;
+      }
+
+      .overlay-text {
+        font-size: 0.9rem;
+        max-width: 50%;
+        top: 25%;
+      }
+
+      .text-step {
+        padding: 15px;
+        max-width: 90%;
+      }
+    }
+
+    @media screen and (max-width: 480px) {
+      .title {
+        font-size: 1.2rem;
+      }
+
+      .paragraph,
+      .text-step p {
+        font-size: 0.9rem;
+      }
+
+      .arrow {
+        font-size: 1.2rem;
+      }
+
+      .overlay-text {
+        font-size: 0.8rem;
+        max-width: 70%;
+        top: 30%;
+      }
+
+      .text-step {
+        padding: 10px;
+        max-width: 95%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section id="intro">
+      <h1 class="title">How tariffs could impact Nassau county's small businesses</h1>
+      <p class="paragraph">This scrollytelling experience shows how tariffs could affect small businesses in Nassau County, through different maps that visualize the countries Nassau's industries purchase products from.</p>
+      <div class="scroll-instruction">
+        <p>Scroll to continue</p>
+        <span class="arrow">&#8595;</span>
+      </div>
+    </section>
+
+    <section id="scrolly">
+      <article>
+        
+        <div class="step" data-step="1">
+          <div class="map-background half-visible" id="first-map">
+            <img src="Firstmap_tarrifs.svg" alt="First Map" />
+          </div>
+        </div>
+
+        
+        <div class="text-step step" data-step="2">
+          <p>Trump ramped up his trade war with tariff rates from 10 to over 50 percent. He says the levies will bring jobs back to the United States, but company executives were focused on possible increases to prices, reducing shipments or cutting back investment activity outright. But markets shuddered at Trump's actions, which could undo decades of global trade patterns - and take many years of adjustment.</p>
+        </div>
+
+      
+        <div class="step" data-step="3">
+          <div class="map-background">
+            <img src="Secondmap_tarriffs.svg" alt="Second Map" />
+            <div class="overlay-text">
+              <p>In Valley Stream, over 38 percent of residents are immigrants— and some its restaurants and retailers cater to international demands. </p>
+            </div>
+          </div>
+        </div>
+
+    
+        <div class="text-step step" data-step="4">
+            <p>Last March, Amina Iduma opened L’ami African Market at 445 Merrick Road, responding to a growing local demand for authentic African products in nearby communities like Valley Stream and Elmont. The market specializes in goods imported directly from West Africa, distinguishing it from more mainstream grocery stores in the area. However, Iduma’s business, like many others, faces uncertainty in light of recent tariff hikes. Following President Trump’s announcement of a 14 percent tariff on goods from West Africa, prices for her products could soon rise.</p>
+
+            <p>But Iduma’s store is not the only local business that may be affected. In nearby communities such as Elmont, Freeport, Bellmore, and Wantagh, companies that depend on imports from China are bracing for even steeper cost burdens. The Trump administration has raised tariffs on Chinese goods by 34 percent, threatening to disrupt supply chains for a range of local businesses. In Elmont, a local auto repair shop is already anticipating price hikes due to a 25 percent tariff on auto parts imported from Canada and Mexico, key suppliers of automotive components.</p>
+          
+            <p>The impact of these tariffs extends beyond retail and repair businesses. Oyster Bay, a community known for its diverse selection of Chinese, Japanese, and Indian restaurants, could also face rising costs as tariffs on ingredients and supplies from Asia take effect.</p>
+          
+            <p>As the trade war continues to evolve, these local businesses—many of which serve immigrant and minority communities—are left grappling with the unpredictable economic ripple effects of international trade policy.</p>
+            </div>
+
+
+        <div class="step" data-step="5">
+          <div class="map-background">
+            <img src="Thirdmap_tariffs.svg" alt="Third Map" />
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <script src="https://unpkg.com/scrollama"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script>
+    var scrolly = document.querySelector("#scrolly");
+    var article = scrolly.querySelector("article");
+    var steps = article.querySelectorAll(".step");
+    var firstMap = document.querySelector("#first-map");
+
+    var scroller = scrollama();
+
+    
+    function handleStepEnter(response) {
+      var el = response.element;
+
+      
+      steps.forEach(step => step.classList.remove('is-active'));
+      el.classList.add('is-active');
+
+     
+      if (response.index >= 2 && response.index < 4) {
+        document.querySelector('.map-background').classList.add('lighter');
+      } else {
+        document.querySelector('.map-background').classList.remove('lighter');
+      }
+
+      
+      if (response.index === 0) {
+        d3.select(firstMap).transition().duration(600).style("opacity", 1).classed('full-visible', true);
+      }
+    }
+
+    function init() {
+      scroller
+        .setup({
+          step: "#scrolly article .step",
+          offset: 0.33,
+        })
+        .onStepEnter(handleStepEnter);
+
+      
+      window.addEventListener("resize", scroller.resize);
+    }
+
+    
+    window.addEventListener('load', function() {
+      init();
+    });
+  </script>
+</body>
+</html>
